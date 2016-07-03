@@ -41,4 +41,4 @@ PS:上面的语句意思是 每天11点半执行邮件提醒功能。其中 root
 `/bin/systemctl restart  crond.service`
 
 ## 许可协议
-本项目源码受 MIT 开源协议保护
+本项目源码受 [MIT](https://github.com/Jathon-yang/AIP/blob/master/LICENSE) 开源协议保护

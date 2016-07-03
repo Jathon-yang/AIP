@@ -64,10 +64,17 @@
         <div class="container text-center">
 
             <p>股市有风险，投资需谨慎！</p>
-            <p>本项目源码受 <a rel="license" href="" target="_blank">MIT</a>开源协议保护。</p>
-            <p></p>
-
+            <p>本项目源码受 <a rel="license" href="https://github.com/Jathon-yang/AIP/blob/master/LICENSE" target="_blank">MIT</a>开源协议保护。</p>
             
+			<ul class="bs-docs-footer-links text-muted">
+			  <li>当前版本：Alpha</li>
+			  <li>·</li>
+			  <li><a href="https://github.com/Jathon-yang/AIP" target="_blank">GitHub 仓库</a></li>
+			  <li>·</li>
+			  <li><a href="https://github.com/twbs/bootstrap" target="_blank">Bootstrap</a></li>
+			  <li>·</li>
+			  <li><a href="https://github.com/Jathon-yang/AIP/issues" target="_blank">Issues</a></li>
+			</ul>
         </div>
     </footer>
 
