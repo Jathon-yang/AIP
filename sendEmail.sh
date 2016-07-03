@@ -1,0 +1,1 @@
+/usr/local/php/bin/php /data/wwwroot/AIP/Cli.php
