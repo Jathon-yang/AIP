@@ -20,6 +20,9 @@ class Aip{
      * 以Cli模式运行核心类
      */
     public static function runCli(){
+		//只允许在Cli模式下运行
+		if(php_sapi_name() != 'cli') exit('No direct script access allowed');
+		
         //判断是否开启邮件提醒功能或者邮件列表是否为空
         if(!Config::$email_config['send_open'] || empty(Config::$email_config['send_list'])) return ;
 
