@@ -26,21 +26,30 @@ php5.3+
 PS: storage 目录需要可读写权限,不然可能会出错。
 
 ## 邮件提醒功能
+
 这个功能需要服务器开启一个增加一个定时任务，所以如果你购买的是虚拟空间，将无法使用此功能。
+
 下面以 CentOS7 下 crontab 为例：
-1.编辑项目根目录下的 sendEmail.sh，依次填写相关的路径
+
+编辑项目根目录下的 sendEmail.sh，依次填写相关的路径
+
 `# vi sendEmail.sh`
+
 `php安装路径/bin/php 项目路径/Cli.php`
+
 PS:PHP安装路径可以通过命令 whereis php 进行查询
 
-2.给 sendEmail.php 赋予可执行权限
+给 sendEmail.php 赋予可执行权限
 `# chmod 755 sendEmail.sh`
 
-3.编辑 /etc/crontab 文件，在末尾追加如下语句
+编辑 /etc/crontab 文件，在末尾追加如下语句
+
 `30 11 * * * root /data/wwwroot/AIP/sendEmail.sh`
+
 PS:上面的语句意思是 每天11点半执行邮件提醒功能。其中 root 为执行的用户名，/data/wwwroot/AIP 为项目路径
 
-4.最后重启 crontab
+最后重启 crontab
+
 `/bin/systemctl restart  crond.service`
 
 ## 许可协议
